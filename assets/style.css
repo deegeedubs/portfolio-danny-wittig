@@ -52,27 +52,35 @@ nav ul li a {
 /* End Header Styling */
 /* Main Styling */
 main {
-    display: flex;
+    /* display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 100vw;
+    width: 100vw; */
     background-color: blue;
     padding: 1em;
 }
 
 .projects {
-    background-image: url('/assets/images/placeholder.png');
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    margin-right: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
 }
 
-.projects h2{
-    position: absolute;
-    background-color: red;
-    z-index: 2;
+.projects > li {
+    flex-basis: 350px;
 }
+
+.projects li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+
+}
+
 
 
 @media screen and (max-width: 992px){
