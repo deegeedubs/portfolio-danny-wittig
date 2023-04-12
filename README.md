@@ -1,15 +1,22 @@
-# portfolio-landing-page-dgw
+# Portfolio of Danny Wittig
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+## Description
+Within this repository, you will find a portfolio of my work. This is composed of work from my bootcamp course, as well as personal projects.
+
+## Technology Used
+* HTML was used to add the content of the website.
+* CSS was used to style the website.
+
+## Overview of Site
+
+
+## Summary
+
+HTML was used to create heading, about me, project, and contact sections. Links were created in the heading to scroll to the other sections.
+
+CSS was used to style the website, utilizing root variables to keep consistent color schemes. Flex boxes were used to assist with responsive design for varying screen dimensions. Hover elements were implemented on the project images to display the project name and add a shadow to highlight the project. Clicking these project images will link you to the respective GitHub repository.
+
+HTML was used to create links to my email, LinkedIn and GitHub profiles.
+
+## Author Links
+
