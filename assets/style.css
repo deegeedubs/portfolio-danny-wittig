@@ -8,7 +8,7 @@
     --col: #CCE7F1;
     --back: #DBEFE1;
     --main: #D3EDEA;
-    --font: rgb(0, 0, 63);
+    --font: rgb(4, 4, 30);
 }
 /* Header Styling */
 header {
@@ -26,13 +26,14 @@ logo {
 }
 
 h1 {
-    background-color: var(--col);
+    background: linear-gradient(90deg, var(--col) 0%, var(--back) 100%);
     text-align: center;
     vertical-align: bottom;
     padding: 0.5em;
     font-family: Baskerville;
     color: var(--font);
     border: 1px solid var(--font);
+    text-shadow: 2px 1px 0px rgb(225,225,225);
 }
 
 nav {
@@ -51,7 +52,7 @@ nav ul {
 
 nav ul li {
     flex: 1 0;
-    background-color: var(--col);
+    background: linear-gradient(90deg, var(--col) 0%, var(--back) 100%);
     margin: 0.5em;
     padding: 0.5em;
     text-align: center;
@@ -63,6 +64,46 @@ nav ul li a {
     color: var(--font);
 }
 /* End Header Styling */
+/* About Me section styling */
+article{
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article h2 {
+    color: var(--font);
+    position: relative;
+    width: fit-content;
+    letter-spacing: 10px;
+    margin: auto;
+    text-align: center;
+    flex: 1 1 100vw;
+    padding-bottom: 25px;
+    text-shadow: 2px 1px 0px rgb(225,225,225);
+}
+
+article img{
+    padding: 3vw;
+    background-color: rgb(55, 55, 55);
+    border: 1px solid black;
+    width: 30vw;
+    
+}
+
+article pre{
+    display: inline-block;
+    background-color: rgb(233, 236, 233);
+    color: rgb(55, 55, 55);
+    border: 1px solid black;
+    border-left: none;
+    width: 65vw;
+    padding: 30px;
+    line-height: 22px;
+    white-space: pre-wrap;
+}
+
+/* End About styling */
 /* Main Styling */
 body{
     background-color: var(--main);
@@ -72,13 +113,15 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--main);
-    padding: 0 1em;
+    padding: 0 1em 1em 1em;
+    margin-bottom: 100px;
+    border-top: 10px double white;
 }
 
 main div{
     display: flex;
     flex-flow: row nowrap;
-    padding-top: 5vh;
+    padding-top: 2em;
 }
 
 .line-deco{
@@ -86,7 +129,7 @@ main div{
     object-fit: contain;
 }
 
-div > h2{
+.spaced {
     color: var(--font);
     position: relative;
     width: fit-content;
@@ -94,6 +137,7 @@ div > h2{
     margin: auto;
     text-align: center;
     flex: 1 1 30vw;
+    text-shadow: 2px 1px 0px white;
 }
 
 .projects {
@@ -114,7 +158,6 @@ div > h2{
     object-fit: cover;
     max-width: 100%;
     height: auto;
-    vertical-align: middle;
     border-radius: 5px;
 
 }
@@ -127,7 +170,41 @@ div > h2{
     z-index: 2;
     color: var(--font);
 }
+/* End of Main styling */
+/* Contact footer styling */
 
+footer {
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 15px;
+    border-top: 1px solid black;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer li:not(:last-child){
+    margin-right: 100px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: var(--font);
+
+}
 
 /* Hover Effects on projects */
 .projects li:hover {
@@ -166,11 +243,11 @@ div > h2{
     
     logo {
         display: block;
-        flex: 1 1 15vh;
+        flex: 1 1 75px;
     }
     nav {
         display: block;
-        flex: 1 1 30vh;
+        flex: 1 1 150px;
     }
 
     nav ul{
@@ -192,5 +269,18 @@ div > h2{
     }
 }
 
+@media screen and (max-width: 450px){
+    main h2{
+        font-size: 5vw;
+    }
 
+    footer ul{
+        flex-direction: column;
+    }
+    footer li:not(:last-child){
+        margin-right: 0;
+        line-height: 30px;
+    }
+
+}
 

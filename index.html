@@ -11,21 +11,36 @@
     <header>
         <logo><h1>Danny Wittig</h1></logo>
         <nav><ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
         </ul></nav>
     </header>
-    <main>
+    <article id="about-section">
+        <h2>About Me</h2>
+        <img src="./assets/images/self.JPG" alt="Picture of Danny Wittig">
+        <pre>Hello, welcome to my portfolio! My name is Danny Wittig and I am a 26 year old aspiring web developer based out of Chicago, IL. 
+
+After graduating from the Illinois Institute of Technology in 2019 with a Bachelors of Science in Chemical Engineering, I spent a few years in the work-force at a chemical instrumentation company testing my skills in the industry to see what skills I liked and did not like utilizing in my day-to-day activities. I found that I loved the problem-solving and troubleshooting aspects of my job, but had a desire to use these skills to create something new, rather than sell something made.
+
+This lead me to rediscover a topic that I had only briefly touched on during my undergraduate studies -- coding. I had little experience, but decided to do some research about the types of work that can be done with this. Web development immediately stood out to me as a field where you can use these various tools to create limitless new projects to solve the worlds problems.
+
+This lead me to enroll in the Full Stack Web Development Coding Bootcamp through Northwestern University to begin my journey into this new field. What you will find in this portfolio is a combination of class work from this course, as well as some passion projects that will highlight my abilities and interests as a web developer and an enthusiastic creator.
+
+Hover over the project images to see more information and click on them to navigate to the respective GitHub repository.
+        </pre>
+    </article>
+
+    <main id="project-section">
         <div>
             <img class="line-deco" src="./assets/images/Horizontal-Line-PNG.png" alt="line">
-            <h2>Current Projects</h2>
+            <h2 class="spaced">My Recent Projects</h2>
             <img class="line-deco" src="./assets/images/Horizontal-Line-PNG.png" alt="line">
         </div>
         <ul class="projects">
             <li id="proj1">
-                <img src="./assets/images/placeholder.png" alt="placeholder">
-                <h2 id="hd1">Project 1</h2>
+                <img src="./assets/images/Horiseon.png" alt="placeholder">
+                <h2 id="hd1">Horiseon: Search Engine Optimization</h2>
             </li>
             <li id="proj2">
                 <img src="./assets/images/placeholder.png" alt="placeholder">
@@ -37,7 +52,14 @@
             </li>
         </ul> 
     </main>
-
+    <footer id="contact-section">
+        <h3>Contact Me</h3>
+        <ul> 
+            <li><a href="mailto:wittigdaniel.g@gmail.com">📩 Email</a></li>
+            <li><a href="https://www.linkedin.com/in/danielgwittig/">🔗 LinkedIn</a></li>
+            <li><a href="https://github.com/deegeedubs">🖥 GitHub</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
