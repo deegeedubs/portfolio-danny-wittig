@@ -9,6 +9,7 @@ Within this repository, you will find a portfolio of my work. This is composed o
 
 ## Overview of Site
 
+<img width="703" alt="PortfolioSite-Screenshot" src="https://user-images.githubusercontent.com/128939200/231635318-4bcea610-5fc2-4ff2-828b-3672f760542d.png">
 
 ## Summary
 
@@ -20,3 +21,4 @@ HTML was used to create links to my email, LinkedIn and GitHub profiles.
 
 ## Author Links
 
+This site was deployed with [GitHub Pages](https://deegeedubs.github.io/portfolio-danny-wittig/)
